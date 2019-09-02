@@ -11,7 +11,12 @@
 	<!--<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - three.js mobile performance
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+
 -->
+<br/>
+<br/>
+<br/>
+<h1 style="background: #fff; text-align: right; padding: 100px;">VERSION 0.1</h1>
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -114,8 +119,18 @@
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
 		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke_logo_target_square.patt'
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke_logo_target_square.patt',
+		size : 0,09,
+		// turn on/off camera smoothing
+		smooth: true,
+		// number of matrices to smooth tracking over, more = smoother but slower follow
+		smoothCount: 5,
+		// distance tolerance for smoothing, if smoothThreshold # of matrices are under tolerance, tracking will stay still
+		smoothTolerance: 0.01,
+		// threshold for smoothing, will keep still unless enough matrices are over tolerance
+		smoothThreshold: 2,
 		//  patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji'
+
 	})
 
 	// build a smoothedControls
