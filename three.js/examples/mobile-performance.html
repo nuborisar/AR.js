@@ -85,10 +85,11 @@
 	var arToolkitContext = new THREEx.ArToolkitContext({
 		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
 		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
-		detectionMode: 'mono',
-		maxDetectionRate: 30,
+		detectionMode: 'color_and_matrix',
+		maxDetectionRate: 60,
 		canvasWidth: 80*3,
 		canvasHeight: 60*3,
+		imageSmoothingEnabled : true,
 	})
 	// initialize it
 	arToolkitContext.init(function onCompleted(){
