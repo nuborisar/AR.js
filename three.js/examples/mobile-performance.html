@@ -12,10 +12,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>VERSION 0.2</a>-->
 <br/>
- 
-<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.5</a>
- 
-
+<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.7</a>
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -87,13 +84,12 @@
 
 	// create atToolkitContext
 	var arToolkitContext = new THREEx.ArToolkitContext({
-		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
+		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
 		detectionMode: 'mono',
 		maxDetectionRate: 30,
 		canvasWidth: 80*3,
-		canvasHeight: 60*3,
-		imageSmoothingEnabled : true,
+		canvasHeight: 60*3, 
 	})
 	// initialize it
 	arToolkitContext.init(function onCompleted(){
@@ -118,8 +114,8 @@
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
 		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke_square.patt',
-		/*size : 0.09,
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke.patt'
+		/*,size : 0.09,
 		// turn on/off camera smoothing
 		smooth: true,
 		// number of matrices to smooth tracking over, more = smoother but slower follow
