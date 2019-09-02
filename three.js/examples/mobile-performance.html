@@ -87,7 +87,7 @@
 		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
 		 
 		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
-		detectionMode: 'color',
+		detectionMode: 'color', // the mode of detection - ['color', 'color_and_matrix', 'mono', 'mono_and_matrix']
 		maxDetectionRate: 30,
 		canvasWidth: 80*3,
 		canvasHeight: 60*3, 
@@ -113,7 +113,7 @@
 	var markerRoot = new THREE.Group
 	scene.add(markerRoot)
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-		type : 'pattern',
+		type : 'unknown', // type of marker - ['pattern', 'barcode', 'unknown' ]
 		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
 		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-verano_square.patt'
 		/*,size : 0.09,
