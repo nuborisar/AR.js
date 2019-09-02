@@ -9,13 +9,13 @@
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>
 	<!--<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - three.js mobile performance
-	--><br/>
-	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>VERSION 0.1</a>
-<!--<br/>
+	<br/>
+	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>VERSION 0.2</a>-->
 <br/>
 <br/>
-<h1 style="background: #fff; text-align: right; padding: 100px;">VERSION 0.1</h1>
--->
+<br/>
+<h1 style="background: #fff; text-align: right; padding: 100px;">VERSION 0.2</h1>
+ 
 
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
@@ -88,9 +88,9 @@
 
 	// create atToolkitContext
 	var arToolkitContext = new THREEx.ArToolkitContext({
-		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
-		detectionMode: 'color',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
+		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
+		detectionMode: 'mono',
 		maxDetectionRate: 60,
 		canvasWidth: 80*3,
 		canvasHeight: 60*3,
@@ -119,7 +119,7 @@
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
 		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke_logo_target_square.patt',
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke_square.patt',
 		size : 0.09,
 		// turn on/off camera smoothing
 		smooth: true,
