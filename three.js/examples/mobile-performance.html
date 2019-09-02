@@ -12,7 +12,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>VERSION 0.2</a>-->
 <br/>
-<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.7</a>
+<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.8</a>
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -86,7 +86,7 @@
 	var arToolkitContext = new THREEx.ArToolkitContext({
 		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_para.dat',
 		//cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/data/camera_coke.dat',
-		detectionMode: 'mono',
+		detectionMode: 'color',
 		maxDetectionRate: 30,
 		canvasWidth: 80*3,
 		canvasHeight: 60*3, 
@@ -114,7 +114,7 @@
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
 		type : 'pattern',
 		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
-		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-coke.patt'
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-verano_square.patt'
 		/*,size : 0.09,
 		// turn on/off camera smoothing
 		smooth: true,
