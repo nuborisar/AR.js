@@ -12,7 +12,7 @@
 	<br/>
 	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>VERSION 0.2</a>-->
 <br/>
-<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.9.4</a>
+<a style="background: #fff; text-align: right; margin: : 100px;">VERSION 0.9.5</a>
 </div><script>
 	//////////////////////////////////////////////////////////////////////////////////
 	//		Init
@@ -113,10 +113,10 @@
 	var markerRoot = new THREE.Group
 	scene.add(markerRoot)
 	var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
-		type : 'barcode', // type of marker - ['pattern', 'barcode', 'unknown' ]
-		barcodeValue : null, //5449000000996
-		patternUrl : null,// THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
-		//patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-verano_square.patt'
+		type : 'pattern', // type of marker - ['pattern', 'barcode', 'unknown' ]
+		//barcodeValue : null, //5449000000996
+		//patternUrl : null,// THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro'
+		patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/pattern-verano_square.patt'
 		/*,size : 0.09,
 		// turn on/off camera smoothing
 		smooth: true,
